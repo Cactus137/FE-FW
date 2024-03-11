@@ -1,0 +1,20 @@
+body {
+  font-size: 17px !important;
+}
+
+footer {
+  background-color: #101828;
+}
+
+.text-ft {
+  color: rgb(152, 162, 179);
+}
+
+.nav-link:hover {
+  color: #0dcaf0;
+} 
+
+.btn:hover {
+  background-color: #167272;
+  color: #fff;
+}

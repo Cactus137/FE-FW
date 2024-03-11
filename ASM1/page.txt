@@ -1,0 +1,17 @@
+
+Dat ve 
+
+About
+Blog
+
+Xây dựng tối thiểu 3 trang:
+
+· Trang giới thiệu thông tin (Bao gồm hình ảnh banner hoặc silde, và các thông tin giới thiệu khác)
+
+· Trang liên hệ
+
+· Trang đặt (Tạo form gồm những thông tin để đặt phù hợp với chủ đề của mình)
+
+- Ví dụ: Trang đặt vé máy bay trang đặt vé máy bay sẽ có form như sau:
+
+- Tạo được thư các thư mục css và js ở ngoài và nhúng vào trang web
