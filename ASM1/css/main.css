@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Barett";
+  src: url(../fonts/BarettStreet.ttf);
+}
+
+@font-face {
+  font-family: "Quentin";
+  src: url(../fonts/Quentin.otf);
+}
+
 body {
-  font-size: 17px !important;
+  font-size: 17px !important; 
 }
 
 footer {
@@ -12,9 +22,20 @@ footer {
 
 .nav-link:hover {
   color: #0dcaf0;
-} 
+}
 
 .btn:hover {
   background-color: #167272;
   color: #fff;
 }
+
+.active {
+  font-weight: bold;
+  color: #36d3f3 !important;
+}
+
+.font-style {
+  font-family: "Quentin", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}  
