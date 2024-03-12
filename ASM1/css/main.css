@@ -39,3 +39,9 @@ footer {
   font-size: 50px;
   font-weight: bold;
 }  
+
+.active-pagination {
+  background-color: #0dcaf0;
+  color: #fff;
+  border-radius: 50%;
+} 
