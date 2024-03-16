@@ -23,11 +23,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <script src="js/angular.min.js"></script>
+    <style>
+      .partners {
+        background-image: url("../images/section-background.png");
+      }
+    </style>
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container d-flex">
@@ -41,6 +52,14 @@
               <li class="nav-item">
                 <a class="nav-link px-4" aria-current="page" href="index.html"
                   >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-4"
+                  aria-current="page"
+                  href="book-ticket.html"
+                  >Booking</a
                 >
               </li>
               <li class="nav-item">
@@ -62,7 +81,7 @@
     </header>
     <main>
       <div class="banner text-center">
-        <img src="images/bg.jpg" class="d-block w-100"/> 
+        <img src="images/bg.jpg" class="d-block w-100" />
       </div>
       <div class="container content mt-5 pt-5 text-center">
         <div class="about mb-5">
@@ -81,7 +100,7 @@
           <img class="mt-5 pt-5" src="images/C-Plane.png" width="300px" />
         </div>
 
-        <div class="map mx-5">
+        <div class="map">
           <iframe
             class="w-100 border rounded-4"
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3724.5323013304564!2d105.782246!3d21.011377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDAwJzQxLjAiTiAxMDXCsDQ2JzU2LjEiRQ!5e0!3m2!1svi!2s!4v1710141802493!5m2!1svi!2s"
@@ -144,7 +163,7 @@
                 </div>
                 <div class="col px-0"></div>
               </div>
-            </div> 
+            </div>
             <form class="subscribe__form d-flex mt-5">
               <input
                 type="text"
@@ -159,7 +178,7 @@
         </div>
       </section>
     </main>
-    <footer class="text-white">
+    <footer class="text-white" ng-controller="footer">
       <div class="container">
         <div class="row py-5">
           <div class="col-6">
@@ -167,20 +186,15 @@
           </div>
           <div class="col-6">
             <span style="color: #667085">INTRODUCE</span>
-            <p class="p-0 m-0 text-ft fw-bold mt-3">Hotline: 0382606012</p>
-            <p class="p-0 m-0 text-ft fw-bold">
-              Email: Blackwhilee04@gmail.com
-            </p>
-            <p class="p-0 m-0 text-ft fw-bold">
-              Address: 7, Lane 14/126, Me Tri Ha Ward, Nam Tu Liem District,
-              Hanoi City
-            </p>
+            <p class="p-0 m-0 text-ft fw-bold mt-3">Hotline: {{hotline}}</p>
+            <p class="p-0 m-0 text-ft fw-bold">Email: {{email}}</p>
+            <p class="p-0 m-0 text-ft fw-bold">Address: {{address}}</p>
           </div>
         </div>
         <div
           class="d-flex flex-column flex-sm-row justify-content-between border-top py-4 text-ft"
         >
-          <p>Copyright © 2024 C-Plane.</p>
+          <p>{{copyright}}</p>
         </div>
       </div>
     </footer>
@@ -196,6 +210,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script src="js/about.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

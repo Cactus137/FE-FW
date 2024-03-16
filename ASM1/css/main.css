@@ -1,15 +1,14 @@
 @font-face {
-  font-family: "Barett";
-  src: url(../fonts/BarettStreet.ttf);
-}
-
-@font-face {
   font-family: "Quentin";
   src: url(../fonts/Quentin.otf);
 }
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  font-size: 17px !important; 
+  font-size: 17px !important;
 }
 
 footer {
@@ -37,11 +36,10 @@ footer {
 .font-style {
   font-family: "Quentin", sans-serif;
   font-size: 50px;
-  font-weight: bold;
-}  
+}
 
 .active-pagination {
   background-color: #0dcaf0;
   color: #fff;
   border-radius: 50%;
-} 
+}

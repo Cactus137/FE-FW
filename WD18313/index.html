@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular JS</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+  </head>
+  <!-- ng-app: Dinh nghia ra khu vuc duoc phep su dung Angular JS -->
+  <body ng-app="myApp">
+    <!-- ng-controller: Dinh nghia ra khu vuc duoc controller dieu khien -->
+    <div ng-controller="demoController">
+      <!-- Hien thi bien -->
+      <h1>{{hello}}</h1>
+      <ul>
+        <li>{{name}}</li>
+        <li>{{age}}</li>
+        <li>{{country}}</li>
+        <li>{{email}}</li>
+      </ul>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>

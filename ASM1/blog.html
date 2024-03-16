@@ -23,8 +23,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/blog.css" /><script src="js/angular.min.js"></script>
     <style>
       .partners {
         background-image: url("../images/section-background.png");
@@ -46,6 +52,14 @@
               <li class="nav-item">
                 <a class="nav-link px-4" aria-current="page" href="index.html"
                   >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-4"
+                  aria-current="page"
+                  href="book-ticket.html"
+                  >Booking</a
                 >
               </li>
               <li class="nav-item">
@@ -74,7 +88,10 @@
         <div
           class="row box-news row-cols-1 row-cols-md-3 g-4 d-flex justify-content-between mb-3"
         >
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
@@ -83,99 +100,109 @@
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Hotel Marketing</p>
+              <p class="card-text">
+                How to build an effective hotel advertising campaign
               </p>
             </div>
           </div>
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
-                src="https://advertising.expedia.com/wp-content/uploads/2023/03/2023-HotelTrends-2_1920x800-534x356.jpg"
+                src="https://advertising.expedia.com/wp-content/uploads/2024/02/Screenshot-2024-02-13-at-11.30.50%E2%80%AFAM-534x356.jpg"
                 style="width: 90%"
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Products and Solutions</p>
+              <p class="card-text">
+                Use TravelAds automated bidding to eliminate guesswork and stay
+                competitive
               </p>
             </div>
           </div>
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
-                src="https://advertising.expedia.com/wp-content/uploads/2023/03/2023-HotelTrends-2_1920x800-534x356.jpg"
+                src="https://advertising.expedia.com/wp-content/uploads/2024/02/BEX_OOH_GLIMPSES_3-0_TOKYO_OMOIDE_YOKOCHO_JOAO_1138_EGRT2301_V1-2-534x356.jpg"
                 style="width: 90%"
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Travel Trends</p>
+              <p class="card-text">
+                Traveler insights Q1 2024: Top destinations and event trends
               </p>
             </div>
           </div>
         </div>
         <div
-          class="row box-news row-cols-1 row-cols-md-3 g-4 d-flex justify-content-between mb-3"
+          class="row box-news row-cols-1 row-cols-md-3 g-4 d-flex justify-content-between mb-5"
         >
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
-                src="https://advertising.expedia.com/wp-content/uploads/2023/03/2023-HotelTrends-2_1920x800-534x356.jpg"
+                src="https://advertising.expedia.com/wp-content/uploads/2024/02/1_AdvertisingSolutions-TravelerPurchasingJourney-MeSo-LandingPage_1920x800-534x356.jpg"
                 style="width: 90%"
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Hotel Marketing</p>
+              <p class="card-text">
+                TravelAds tips and tricks to boost hotel bookings
               </p>
             </div>
           </div>
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
-                src="https://advertising.expedia.com/wp-content/uploads/2023/03/2023-HotelTrends-2_1920x800-534x356.jpg"
+                src="https://advertising.expedia.com/wp-content/uploads/2024/01/thumbnail-534x356.jpeg"
                 style="width: 90%"
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Research</p>
+              <p class="card-text">
+                Travel advertising solutions for the travelers’ buying journey
               </p>
             </div>
           </div>
-          <div class="col border rounded-4 mx-3 p-0 h-100" style="width: 405px">
+          <div
+            class="col border rounded-4 mx-3 p-0 min-h-100"
+            style="width: 405px"
+          >
             <div class="image-news d-flex justify-content-center py-3">
               <img
                 class="rounded-4"
-                src="https://advertising.expedia.com/wp-content/uploads/2023/03/2023-HotelTrends-2_1920x800-534x356.jpg"
+                src="https://advertising.expedia.com/wp-content/uploads/2023/11/Stocksy_txp32b13ae6CJo300_Large_503107-scaled-e1701368777401-534x356.jpg"
                 style="width: 90%"
               />
             </div>
             <div class="card-body mx-4 my-3">
-              <p class="card-title fw-bold text-primary">Card title</p>
-              <p class="card-text fw-bold">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-title fw-bold">Products and Solutions</p>
+              <p class="card-text">
+                Expedia Group announces European partnerships
               </p>
             </div>
           </div>
         </div>
-        <div class="row border-top py-5 mb-5">
+        <div class="row border-bottom py-5 mb-5">
           <nav aria-label="Page navigation example">
             <ul
               class="pagination d-flex justify-content-center align-items-center mb-0"
