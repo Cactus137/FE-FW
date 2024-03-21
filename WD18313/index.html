@@ -6,6 +6,13 @@
     <title>Angular JS</title>
     <script src="libs/angular.min.js"></script>
     <script src="libs/angular-route.min.js"></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <!-- ng-app: Dinh nghia ra khu vuc duoc phep su dung Angular JS -->
   <body ng-app="myApp">
@@ -14,13 +21,57 @@
       <!-- Hien thi bien -->
       <h1>{{hello}}</h1>
       <ul>
-        <li>{{name}}</li>
-        <li>{{age}}</li>
-        <li>{{country}}</li>
-        <li>{{email}}</li>
+        <li>Ma sinh vien: {{student.idStudent}}</li>
+        <li>Ten sinh vien: {{student.nameStudent}}</li>
+        <li>Nam sinh: {{student.yearOld}}</li>
+        <!-- if AngularJS -->
+        <h2 ng-if="student.yearOld == 2005">Đẹp trai vãi nồi</h2>
+        <!-- switch case AngularJS -->
       </ul>
+      <span ng-switch="student.yearOld">
+        <h3 ng-switch-when="2004">Đẹp trai cấp 1</h3>
+        <h3 ng-switch-when="2003">Đẹp trai cấp 2</h3>
+        <h3 ng-switch-when="2002">Đẹp trai cấp 3</h3>
+        <h3 ng-switch-when="2005">Xấu vcl</h3>
+      </span>
+
+      <table style="margin-bottom: 15px;">
+        <tr>
+          <th>ID student</th>
+          <th>Name</th>
+          <th>Year Old</th>
+        </tr>
+        <tr ng-repeat="st in students">
+          <td>{{st.idStudent}}</td>
+          <td>{{st.nameStudent}}</td>
+          <td>{{st.yearOld}}</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Year Old</th>
+          <th>ID Card</th>
+          <th>Phone Number</th>
+          <th>Address</th>
+          <th></th>
+        </tr>
+        <tr ng-repeat="cr in crizens">
+          <td>{{cr.name}}</td>
+          <td>{{cr.yearOld}}</td>
+          <td>{{cr.idCard}}</td>
+          <td>{{cr.phoneNumber}}</td>
+          <td>{{cr.address}}</td>
+          <td ng-if="(2024-cr.yearOld) >= 18 && (2024-cr.yearOld) <=26">
+            Có thể nhập ngũ
+          </td>
+          <td ng-if="(2024-cr.yearOld) < 18 || (2024-cr.yearOld) >26">
+            Không thể nhập ngũ
+          </td>
+        </tr>
+      </table>
     </div>
   </body>
-
-  <script src="app.js"></script>
+  <script src="controllers/app.js"></script>
 </html>

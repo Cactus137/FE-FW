@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form AngularJS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="libs/angular.min.js"></script>
+  </head>
+
+  <body ng-app="myApp" class="container p-5">
+    <header></header>
+    <main ng-controller="mainController">
+      <form>
+        <!-- ng-model: Duoc dung de buoc du lieu hai chieu -->
+        <!-- 1: $scope -->
+        <!-- 2: Dieu khien tu form nhu cac the <input>, <select> hoac <textaria> -->
+        <!-- <div class="mb-3">
+          <label for="" class="form-label">a</label>
+          <input type="text" class="form-control" placeholder="" ng-model="a" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">b</label>
+          <input type="text" class="form-control" placeholder="" ng-model="b" />
+        </div> -->
+        <!-- Radio -->
+        <!-- <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="1"
+            ng-model="input.gender"
+          />
+          Male
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="2"
+            ng-model="input.gender"
+          />
+          Female
+        </div> -->
+        <!-- Checkbox -->
+        <!-- <p class="mt-3">-- Tick ABC --</p>
+        <label class="list-group-item">
+          <input type="checkbox" ng-model="input.list.a" />
+          A
+        </label>
+        <label class="list-group-item">
+          <input type="checkbox" ng-model="input.list.b" />
+          B
+        </label>
+        <label class="list-group-item">
+          <input type="checkbox" ng-model="input.list.c" />
+          C
+        </label> -->
+        <!-- select -->
+        <!-- Level 1 -->
+        <!-- <label>List Product</label>
+        <select name="" id="" ng-model="input.select">
+          <option value="beer">Beer</option>
+          <option value="wine">Wine</option>
+          <option value="tabaco">Tabaco</option>
+          <option value="coffee">Coffee</option>
+        </select> -->
+        <!-- Level 2 -->
+        <!-- <br /><br />
+        <label>Category</label>
+        <select name="" id="" ng-model="input.category">
+          <option ng-repeat="cat in categories" value="{{cat.id}}">
+            {{cat.name}}
+          </option>n
+        </select>
+        <br /><br /> -->
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập số:</label>
+          <input type="text" class="form-control" placeholder="" ng-model="number" />
+        </div>
+
+        <label>Kiểm tra: </label>
+        <select name="" id="" ng-model="input.checkNumber">
+          <option value="check1">So nguyen</option>
+          <option value="check2">So chinh phuong</option>
+          <option value="check3">So hoan hao</option>
+        </select>
+        <p class="mt-3 fw-bold text-primary">{{result}}</p>
+        <button type="submit" class="btn btn-primary" ng-click="submit()">
+          Submit
+        </button>
+      </form>
+      <!-- <div class="mt-5">
+        <h3>a + b = {{sum}}</h3>
+        <h3>a - b = {{diff}}</h3>
+        <h3>a * b = {{pro}}</h3>
+        <h3>a / b = {{quo}}</h3>
+      </div> -->
+    </main>
+    <footer></footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="controllers/form.js"></script>
+  </body>
+</html>
