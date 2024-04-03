@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Quentin";
+  src: url(../fonts/Quentin.otf);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 17px !important;
+}
+
+footer {
+  background-color: #101828;
+}
+
+.text-ft {
+  color: rgb(152, 162, 179);
+}
+
+.nav-link:hover {
+  color: #0dcaf0;
+}
+
+.btn:hover {
+  background-color: #167272;
+  color: #fff;
+}
+
+.active {
+  font-weight: bold;
+  color: #36d3f3 !important;
+}
+
+.font-style {
+  font-family: "Quentin", sans-serif;
+  font-size: 50px;
+}
+
+.active-pagination {
+  background-color: #0dcaf0;
+  color: #fff;
+  border-radius: 50%;
+}

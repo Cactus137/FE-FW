@@ -1,0 +1,27 @@
+<section>
+  <div class="table-responsive mt-2">
+    <h2 class="py-4">{{title}}</h2>
+    <a href="#!/add" class="btn btn-info mb-3">Add Product</a>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="product in products">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td>
+            <a href="#!/edit"><span class="badge bg-warning">Edit</span></a>
+            <button class="btn btn-danger" ng-click="delete(product.id)">Delete</button>
+          </td>
+        </tr>    
+      </tbody>
+    </table>
+  </div>
+</section>

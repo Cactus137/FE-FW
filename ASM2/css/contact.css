@@ -1,0 +1,12 @@
+.map {
+  padding: 0 0 400px;
+}
+
+.form-contact {
+  position: absolute;
+  height: fit-content;
+  width: 1008px;
+  top: 400px;
+  transform: translateX(-50%);
+  left: 50%;
+}
