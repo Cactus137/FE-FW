@@ -1,17 +1,17 @@
+Assiment Giai đoạn 2 
+    • Chức năng thêm mới:
+    • Tạo route ứng với trang giao diện vừa xây dựng. (VD: /products/add)
+    • Khi click vào nút "Thêm mới" ở trang danh sách, ứng dụng sẽ chuyển sang trang thêm theo route đã khai báo. 
 
-Dat ve 
+    
+    • Chức năng xem chi tiết:
+    • Tạo route tương ứng với trang giao diện  (vd: /products/detail/:id)
+    • Khi click vào nút "Xem chi tiết" ở trang danh sách, ứng dụng sẽ chuyển sang trang chi tiết theo route đã khai báo. 
+    • Hiển thị chi tiết các trường thông tin lên các ô input tương ứng.
+    • Chức năng sửa:
+    • Tạo route tương ứng với trang giao diện (VD: /products/edit:id)
+    • Khi nhấn nút "Sửa" ở trang chi tiết, ứng dụng sẽ cập nhật thông và quay lại trang danh sách.
+    • . Chức năng xóa:
+    • Tạo route tương ứng với trang giao diện (VD: /products/delete/:id)
+    • Khi nhấn nút "xóa" ở trang chi tiết, ứng dụng sẽ thông báo bạn có chắc muốn xóa (phòng / khóa học/ vé) này không?
 
-About
-Blog
-
-Xây dựng tối thiểu 3 trang:
-
-· Trang giới thiệu thông tin (Bao gồm hình ảnh banner hoặc silde, và các thông tin giới thiệu khác)
-
-· Trang liên hệ
-
-· Trang đặt (Tạo form gồm những thông tin để đặt phù hợp với chủ đề của mình)
-
-- Ví dụ: Trang đặt vé máy bay trang đặt vé máy bay sẽ có form như sau:
-
-- Tạo được thư các thư mục css và js ở ngoài và nhúng vào trang web

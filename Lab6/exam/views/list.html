@@ -1,0 +1,35 @@
+<a class="btn btn-primary mb-5" href="#!/add" role="button">Add Customer</a>
+
+<div class="table-responsive">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="" ng-repeat="customer in customers">
+        <td>{{customer.id}}</td>
+        <td>{{customer.name}}</td>
+        <td>{{customer.age}}</td>
+        <td>{{customer.address}}</td>
+        <td>{{customer.phone_number}}</td>
+        <td>
+          <a href="#!/edit/{{customer.id}}"
+            ><span class="btn btn-warning" ng-click="edit(customer.id)"
+              >Edit</span
+            ></a
+          >
+          <button class="btn btn-danger" ng-click="delete(customer.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

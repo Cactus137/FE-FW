@@ -1,0 +1,95 @@
+{
+  "flights": [
+    {
+      "id": "1",
+      "code": "AA-123",
+      "company": "Vietjet Air",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/VJ.png",
+      "from": "Hanoi",
+      "fromCode": "HAN",
+      "to": "Ho Chi Minh",
+      "toCode": "SGN",
+      "departure": "08:00",
+      "arrival": "10:00",
+      "price": "2323200"
+    },
+    {
+      "id": "2",
+      "code": "AA-124",
+      "company": "Vietnam Airlines",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/VJ.png",
+      "from": "Hanoi",
+      "fromCode": "HAN",
+      "to": "Da Nang",
+      "toCode": "DAD",
+      "departure": "10:00",
+      "arrival": "12:00",
+      "price": "2323200"
+    },
+    {
+      "id": "3",
+      "code": "AA-125",
+      "company": "Bamboo Airways",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/QH.png",
+      "from": "Hanoi",
+      "fromCode": "HAN",
+      "to": "Da Nang",
+      "toCode": "DAD",
+      "departure": "12:00",
+      "arrival": "14:00",
+      "price": "2323200"
+    },
+    {
+      "id": "5",
+      "code": "AA-125",
+      "company": "Bamboo Airways",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/QH.png",
+      "from": "Hue",
+      "fromCode": "HUI",
+      "to": "Hai Phong",
+      "toCode": "HPH",
+      "departure": "12:00",
+      "arrival": "14:00",
+      "price": "2323200"
+    },
+    {
+      "id": "6",
+      "code": "AA-125",
+      "company": "Vietjet Air",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/VN.png",
+      "from": "Hue",
+      "fromCode": "HUI",
+      "to": "Hai Phong",
+      "toCode": "HPH",
+      "departure": "12:00",
+      "arrival": "14:00",
+      "price": "2323200"
+    },
+    {
+      "id": "7",
+      "code": "AA-125",
+      "company": "Vietnam Airlines",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/VN.png",
+      "from": "Hue",
+      "fromCode": "HUI",
+      "to": "Hai Phong",
+      "toCode": "HPH",
+      "departure": "12:00",
+      "arrival": "14:00",
+      "price": "2323200"
+    },
+    {
+      "id": "8",
+      "code": "AA-125",
+      "company": "Bamboo Airways",
+      "image": "https://minio.fares.vn/mixivivu-dev/icons/logo-airline/QH.png",
+      "from": "Hue",
+      "fromCode": "HUI",
+      "to": "Hai Phong",
+      "toCode": "HPH",
+      "departure": "12:00",
+      "arrival": "14:00",
+      "price": "2323200"
+    }
+  ]
+}
