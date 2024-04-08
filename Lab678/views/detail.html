@@ -1,0 +1,25 @@
+<h2 class="text-center">CHI TIẾT ĐIỆN THOẠI</h2>
+
+<form>
+  <div class="mb-3">
+    <label for="" class="form-label">ID:</label>
+    <input type="text" class="form-control mb-3" disabled ng-model="inputValue.id" /> 
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Tên:</label>
+    <input type="text" class="form-control mb-3" disabled ng-model="inputValue.ten" /> 
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Hãng:</label>
+    <input type="text" class="form-control mb-3" disabled ng-model="inputValue.hang" />
+
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Giá:</label>
+    <input type="text" class="form-control mb-3" disabled ng-model="inputValue.gia" /> 
+  </div>
+  <div class="d-flex justify-content-center">
+    <a class="btn btn-primary me-2" href="#!/edit/phone/{{inputValue.id}}" role="button">Sửa</a>
+    <a class="btn btn-warning" href="#!/list-phone">Quay lại</a>
+  </div>
+</form>

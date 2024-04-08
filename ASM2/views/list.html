@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="css/book-ticket.css" />
+<h1 class="text-center mt-4 fw-bold">List Flights</h1>
+<div class="container mb-5 mt-3 inf-search">
+  <div class="">
+    <a href="#!/flight/add" class="btn btn-primary"
+      >Add New Flight</a
+    >
+  </div>
+  <div class="table-responsive mt-3" style="min-height: 100vh;">
+    <table class="table">
+      <thead>
+        <tr class="table-primary"> 
+          <th class="text-center">Code</th>
+          <th class="text-center">Company</th>
+          <th class="text-center">Departure</th>
+          <th class="text-center">Arrival</th>
+          <th class="text-center">Price</th>
+          <th class="text-center"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="flight in flights"> 
+          <td class="text-center">{{flight.code}}</td>
+          <td class="text-center">{{flight.company.name}}</td>
+          <td>
+            <div class="col p-0 text-center">
+              <div class="timeDepart fw-bold" style="font-size: 14px">
+                {{formatDate(flight.departure)}}
+              </div>
+              <div class="codeDepart" style="font-size: 14px">
+                {{flight.from.code}}
+              </div>
+            </div>
+          </td>
+          <td class="text-center">
+            <div class="col p-0 text-center">
+              <div class="timeDepart fw-bold" style="font-size: 14px">
+                {{formatDate(flight.arrival)}} 
+              </div>
+              <div class="codeDepart" style="font-size: 14px">
+                {{flight.to.code}}
+              </div>
+            </div>
+          </td>
+          <td class="text-center">{{flight.price | number}} VND</td>
+          <td class="text-center">
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Action
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a href="#!/flight/detail/{{flight.id}}" class="dropdown-item"
+                    >Detail</a
+                  >
+                </li>
+                <li>
+                  <a href="#!/flight/edit/{{flight.id}}" class="dropdown-item"
+                    >Edit</a
+                  >
+                </li>
+                <li>
+                  <button class="dropdown-item" ng-click="delete(flight.id)"
+                    >Delete</button
+                  >
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

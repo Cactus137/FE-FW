@@ -24,8 +24,21 @@ app.config(($routeProvider) => {
     .when("/pay", {
       templateUrl: "./views/pay.html",
     })
+    .when("/admin/", {
+      templateUrl: "./views/list.html",
+      controller: ListController,
+    })
     .when("/flight/add", {
       templateUrl: "./views/add.html",
+      controller: AddController,
+    })
+    .when("/flight/detail/:id", {
+      templateUrl: "./views/detail.html",
+      controller: DetailController,
+    })
+    .when("/flight/edit/:id", {
+      templateUrl: "./views/edit.html",
+      controller: EditController,
     });
 });
 

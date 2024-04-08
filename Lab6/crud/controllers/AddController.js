@@ -3,6 +3,10 @@ window.AddController = function ($scope, $http, $location) {
 
   // $scope.inputValue.name = ""
   // $scope.inputValue.price = ""
+  const apiBrand = "http://localhost:3000/brands";
+  $http.get(apiBrand).then(function (res) {
+    $scope.brands = res.data;
+  });
 
   const apiUrl = "http://localhost:3000/products";
 

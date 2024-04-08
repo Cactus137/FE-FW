@@ -1,17 +1,39 @@
-Assiment Giai đoạn 2 
-    • Chức năng thêm mới:
-    • Tạo route ứng với trang giao diện vừa xây dựng. (VD: /products/add)
-    • Khi click vào nút "Thêm mới" ở trang danh sách, ứng dụng sẽ chuyển sang trang thêm theo route đã khai báo. 
+Assiment Giai đoạn 2
 
-    
-    • Chức năng xem chi tiết:
-    • Tạo route tương ứng với trang giao diện  (vd: /products/detail/:id)
-    • Khi click vào nút "Xem chi tiết" ở trang danh sách, ứng dụng sẽ chuyển sang trang chi tiết theo route đã khai báo. 
-    • Hiển thị chi tiết các trường thông tin lên các ô input tương ứng.
-    • Chức năng sửa:
-    • Tạo route tương ứng với trang giao diện (VD: /products/edit:id)
-    • Khi nhấn nút "Sửa" ở trang chi tiết, ứng dụng sẽ cập nhật thông và quay lại trang danh sách.
-    • . Chức năng xóa:
-    • Tạo route tương ứng với trang giao diện (VD: /products/delete/:id)
-    • Khi nhấn nút "xóa" ở trang chi tiết, ứng dụng sẽ thông báo bạn có chắc muốn xóa (phòng / khóa học/ vé) này không?
+v Sử dụng giao diện đã xây dựng ở ASM1 để xây dựng các chức năng sau:
 
+· Sử dụng angular Route để thực hiện chuyển trang.
+
+· Sử dụng db.json để lưu trữ dữ liệu.
+
+v Thực hiện chức năng Hiển thị danh sách ra trang chủ
+
+Ø Tạo route ứng với trang giao diện vừa xây dựng.
+
+Ø Hiển thị danh sách phải đầy đủ các trường thông tin.
+
+v Chức năng thêm mới:
+
+Ø Tạo route ứng với trang giao diện vừa xây dựng. (VD: /products/add)
+
+Ø Khi click vào nút "Thêm mới" ở trang danh sách, ứng dụng sẽ chuyển sang trang thêm theo route đã khai báo.
+
+v Chức năng xem chi tiết:
+
+Ø Tạo route tương ứng với trang giao diện (vd: /products/detail/:id)
+
+Ø Khi click vào nút "Xem chi tiết" ở trang danh sách, ứng dụng sẽ chuyển sang trang chi tiết theo route đã khai báo.
+
+Ø Hiển thị chi tiết các trường thông tin lên các ô input tương ứng.
+
+v Chức năng sửa:
+
+Ø Tạo route tương ứng với trang giao diện (VD: /products/edit:id)
+
+Ø Khi nhấn nút "Sửa" ở trang chi tiết, ứng dụng sẽ cập nhật thông và quay lại trang danh sách.
+
+v . Chức năng xóa:
+
+Ø Tạo route tương ứng với trang giao diện (VD: /products/delete/:id)
+
+Ø Khi nhấn nút "xóa" ở trang chi tiết, ứng dụng sẽ thông báo bạn có chắc muốn xóa (phòng / khóa học/ vé) này không?

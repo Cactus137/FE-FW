@@ -2,12 +2,12 @@ const app = angular.module("myApp", ["ngRoute"]);
 
 app.config(($routeProvider) => {
   $routeProvider
-    .when("/", {
+    .when("/list-phone", {
       templateUrl: "./views/list.html",
       controller: ListController,
     })
-    .when("/add", {
-      templateUrl: "./views/add.html",
-      controller: AddController,
-    });
+    // .when("/add", {
+    //   templateUrl: "./views/add.html",
+    //   controller: AddController,
+    // });
 });

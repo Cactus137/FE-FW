@@ -5,7 +5,7 @@
     <div class="col-12 border rounded-4 bg-light">
       <div class="row">
         <div class="form-buy-ticket px-4">
-          <p class="fw-bold fs-5 mt-4">Add Flight</p>
+          <p class="fw-bold fs-5 mt-4">Edit Flight</p>
           <form class="mb-5">
             <div class="row">
               <div class="mb-3 col">
@@ -64,6 +64,7 @@
                   class="form-control mb-3 rounded-pill"
                   placeholder="Departure"
                   ng-model="inputValue.departure"
+                  ng-init="inputValue.departure = inputValue.departure"
                 />
               </div>
               <div class="mb-3 col">
@@ -92,6 +93,7 @@
                   class="form-control mb-3 rounded-pill"
                   placeholder="Arrival"
                   ng-model="inputValue.arrival"
+                  ng-init="inputValue.arrival = inputValue.arrival"
                 />
               </div>
             </div>
@@ -145,8 +147,8 @@
                 class="mb-3 col d-flex align-items-end justify-content-center"
               >
                 <a href="#!/admin" class="btn btn-secondary me-3"> Cancel </a>
-                <button ng-click="add()" class="btn btn-primary">
-                  Add Flight
+                <button ng-click="edit()" class="btn btn-primary">
+                  Edit Flight
                 </button>
               </div>
             </div>

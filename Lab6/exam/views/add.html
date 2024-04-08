@@ -13,9 +13,12 @@
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control mb-3"
                   ng-model="inputValue.name"
                 />
+                <span class="text-danger" ng-if="check.name == false"
+                  >Name is Required!</span
+                >
               </div>
               <div class="col-12 mt-4">
                 <label for="name" class="form-label"

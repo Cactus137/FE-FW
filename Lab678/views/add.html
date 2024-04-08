@@ -1,0 +1,36 @@
+<h2 class="text-center">THÊM ĐIỆN THOẠI</h2>
+
+<form>
+  <div class="mb-3">
+    <label for="" class="form-label">ID:</label>
+    <input type="text" class="form-control mb-3" ng-model="inputValue.id" />
+    <span class="text-danger" ng-if="check.id == true"
+      >Vui lòng nhập ID điện thoại</span
+    >
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Tên:</label>
+    <input type="text" class="form-control mb-3" ng-model="inputValue.ten" />
+    <span class="text-danger" ng-if="check.ten == true"
+      >Vui lòng nhập Tên điện thoại</span
+    >
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Hãng:</label>
+    <select class="form-select" ng-model="inputValue.hang" ng-init="inputValue.hang = 'SAMSUNG'">
+      <option value="SAMSUNG" selected>SAMSUNG</option> 
+      <option value="APPLE">APPLE</option> 
+      <option value="OPPO">OPPO</option> 
+    </select> 
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Giá:</label>
+    <input type="text" class="form-control mb-3" ng-model="inputValue.gia" />
+    <span class="text-danger" ng-if="check.gia == true"
+      >Vui lòng nhập Giá điện thoại</span
+    > 
+  </div>
+  <div class="d-flex justify-content-center">
+    <button class="btn btn-success" ng-click="add()">Thêm</button>
+  </div>
+</form>

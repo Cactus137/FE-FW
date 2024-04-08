@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="css/book-ticket.css" />
+
+<div class="step step-2 p-5 container mt-5 inf-passenger">
+  <div class="row d-flex justify-content-between">
+    <div class="col-12 border rounded-4 bg-light">
+      <div class="row">
+        <div class="form-buy-ticket px-4">
+          <p class="fw-bold fs-5 mt-4">Detail Flight</p>
+          <form class="mb-5">
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >Code<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.code"
+                  disabled
+                />
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >Company<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.company.name"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >From<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.from.code"
+                  disabled
+                />
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >Departure<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.departure"
+                  disabled
+                />
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >To<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.to.code"
+                  disabled
+                />
+              </div>
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >Arrival<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  placeholder="Code"
+                  ng-model="inputValue.arrival"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col">
+                <label for="" class="form-label"
+                  >Price<span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control mb-3 rounded-pill"
+                  placeholder="Price"
+                  ng-model="inputValue.price"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="mb-3 col d-flex align-items-end justify-content-center"
+              >
+                <a
+                  href="#!/flight/edit/{{inputValue.id}}"
+                  class="btn btn-info me-3"
+                >
+                  Edit
+                </a>
+                <a
+                  href="#!/admin"
+                  class="btn btn-warning me-3"
+                >
+                  Back
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
