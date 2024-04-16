@@ -1,0 +1,64 @@
+<div class="box-table mt-5 border rounded">
+  <div class="border-bottom bg-light">
+    <h3 class="pt-2 ps-3">Thêm đồ ăn</h3>
+  </div>
+  <div class="">
+    <form class="m-3">
+      <div class="mb-3">
+        <label for="" class="form-label">Mã sản phẩm:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          disabled
+          ng-model="inputValue.ma_sp"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Tên sản phẩm:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          disabled
+          ng-model="inputValue.ten"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Loại:</label>
+        <select
+          class="form-select "
+          disabled
+          ng-model="inputValue.loai"
+        >
+          <option selected disabled>Loại</option>
+          <option value="Đồ ăn sáng">Đồ ăn sáng</option>
+          <option value="Đồ ăn trưa">Đồ ăn trưa</option>
+          <option value="Đồ ăn tối">Đồ ăn tối</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Hạn sử dụng:</label>
+        <input
+          type="date"
+          class="rounded form-control"
+          disabled
+          ng-model="inputValue.han_su_dung"
+          ng-init="inputValue.han_su_dung = inputValue.han_su_dung"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Giá:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          disabled
+          ng-model="inputValue.gia"
+        /> 
+      </div>
+      <div class="mb-3 text-center">
+        <a href="#!/list-foods" class="btn btn-light border me-3">Quay lại</a>
+        <a href="#!/foods/edit/{{inputValue.id}}" class="btn btn-warning border me-3">Chỉnh sửa</a>
+        
+      </div>
+    </form>
+  </div>
+</div>

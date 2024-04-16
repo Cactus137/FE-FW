@@ -1,0 +1,38 @@
+<h2 class="text-center">CHI TIET ĐIỆN THOẠI</h2>
+<form>
+  <div class="mb-3">
+    <label for="" class="form-label">ID:</label>
+    <input type="text" class="form-control" disabled ng-model="inputValue.id" />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Ten:</label>
+    <input
+      type="text"
+      class="form-control"
+      disabled
+      ng-model="inputValue.name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Hang:</label>
+    <input
+      type="text"
+      class="form-control"
+      disabled
+      ng-model="inputValue.brand"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Gia:</label>
+    <input
+      type="text"
+      class="form-control"
+      disabled
+      ng-model="inputValue.price"
+    />
+  </div>
+  <div class="mb-3 text-center">
+    <a href="#!/edit/phone/{{inputValue.id}}" class="btn btn-primary">Sua</a>
+    <a href="#!/list-phone" class="btn btn-warning">Quay lai</a>
+  </div>
+</form>

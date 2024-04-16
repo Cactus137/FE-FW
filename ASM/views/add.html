@@ -1,0 +1,68 @@
+<div class="box-table mt-5 border rounded">
+  <div class="border-bottom bg-light">
+    <h3 class="pt-2 ps-3">Thêm đồ ăn</h3>
+  </div>
+  <div class="">
+    <form class="m-3">
+      <div class="mb-3">
+        <label for="" class="form-label">Mã sản phẩm:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          ng-model="inputValue.ma_sp"
+        />
+        <span class="text-danger" ng-if="check.ma_sp == true"
+          >Vui lòng nhập mã sản phẩm</span
+        >
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Tên sản phẩm:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          ng-model="inputValue.ten"
+        /><span class="text-danger" ng-if="check.ten == true"
+        >Vui lòng nhập tên sản phẩm</span
+      >
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Loại:</label>
+        <select class="form-select" ng-model="inputValue.loai">
+          <option selected disabled>Loại</option>
+          <option value="Đồ ăn sáng">Đồ ăn sáng</option>
+          <option value="Đồ ăn trưa">Đồ ăn trưa</option>
+          <option value="Đồ ăn tối">Đồ ăn tối</option>
+        </select><span class="text-danger" ng-if="check.loai == true"
+        >Vui lòng chọn loại sản phẩm</span
+      >
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Hạn sử dụng:</label>
+        <input
+          type="date"
+          class="rounded form-control"
+          ng-model="inputValue.han_su_dung"
+        /><span class="text-danger" ng-if="check.han_su_dung == true"
+        >Vui lòng nhập hạn sử dụng</span
+      >
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Giá:</label>
+        <input
+          type="text"
+          class="rounded form-control"
+          ng-model="inputValue.gia"
+        />
+        <span class="text-danger" ng-if="check.gia == true"
+          >Giá phải là số nguyên dương lớn hơn 100</span
+        >
+      </div>
+      <div class="mb-3 text-center">
+        <button type="reset" class="btn btn-light border me-3">Reset</button>
+        <button type="buton" ng-click="add()" class="btn btn-success">
+          Thêm mới
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

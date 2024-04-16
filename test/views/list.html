@@ -1,0 +1,31 @@
+<h2 class="text-center">DANH SÁCH ĐIỆN THOẠI</h2>
+<div class="d-flex justify-content-end">
+  <a href="#!/phone/add" class="btn btn-success">Them</a>
+</div>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Ten</th>
+        <th scope="col">Hang</th>
+        <th scope="col">Gia</th>
+        <th scope="col">Thao tac</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="" ng-repeat="product in products">
+        <td scope="row">{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.brand}}</td>
+        <td>{{product.price}}</td>
+        <td>
+          <a href="#!/detail/phone/{{product.id}}" class="btn btn-primary"
+            >Chi tiet</a
+          >
+          <a href="#!/edit/phone/{{product.id}}" class="btn btn-warning">Sua</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,38 @@
+<h2 class="text-center">SUA ĐIỆN THOẠI</h2>
+<form>
+  <div class="mb-3">
+    <label for="" class="form-label">ID:</label>
+    <input type="text" class="form-control" ng-model="inputValue.id" />
+    <span class="text-danger" ng-if="check.id == true"
+      >ID san pham khong hop le</span
+    >
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Ten:</label>
+    <input type="text" class="form-control" ng-model="inputValue.name" />
+    <span class="text-danger" ng-if="check.name == true"
+      >Ten san pham khong hop le</span
+    >
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Hang:</label>
+    <select class="form-select" ng-model="inputValue.brand">
+      <option value="SAMSUNG">SAMSUNG</option>
+      <option value="APPLE">APPLE</option>
+      <option value="OPPO">OPPO</option>
+    </select>
+    <span class="text-danger" ng-if="check.brand == true"
+      >Hang san pham khong hop le</span
+    >
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Gia:</label>
+    <input type="text" class="form-control" ng-model="inputValue.price" />
+    <span class="text-danger" ng-if="check.price == true"
+      >Gia san pham khong hop le</span
+    >
+  </div>
+  <div class="mb-3 text-center">
+    <button type="submit" class="btn btn-success" ng-click="edit()">Sua</button>
+  </div>
+</form>

@@ -1,0 +1,43 @@
+<div class="box-table mt-5 border rounded">
+  <div class="border-bottom bg-light">
+    <h3 class="pt-2 ps-3">Danh sách đồ ăn</h3>
+  </div>
+  <div class="row">
+    <div class="my-3 me-5 col d-flex justify-content-end">
+      <a href="#!/foods/add" class="btn btn-success">+ Thêm đồ ăn</a>
+    </div>
+    <div class="table-responsive mt-2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Mã sản phẩm</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Loại</th>
+            <th scope="col">Hạn sử dụng</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="food in foods">
+            <td>{{food.id}}</td>
+            <td>{{food.ma_sp}}</td>
+            <td>{{food.ten}}</td>
+            <td>{{food.loai}}</td>
+            <td>{{formatDate(food.han_su_dung)}}</td>
+            <td>{{food.gia | number}}</td>
+            <td>
+              <a href="#!/foods/detail/{{food.id}}" class="btn btn-primary"
+                >Chi tiết</a
+              >
+              <button class="btn btn-danger" ng-click="delete({{food.id}})">
+                Xóa
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
